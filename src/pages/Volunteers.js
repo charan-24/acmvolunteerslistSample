@@ -3,6 +3,16 @@ import './Volunteers.css';
 import Table from 'react-bootstrap/Table'
 import { Candidates } from "./VolunteersList";
 export const Volunteers = () => {
+    function getCandidates(Candidate,index){
+        return(
+            <tr className="table-data" key={Candidate.id}>
+                    <td>{index+1}</td>
+                    <td>{Candidate.Name}</td>
+                    <td>{Candidate.domain}</td>
+                    <td><a className="text-dark" href={"mailto:" + Candidate.emailid}>{Candidate.emailid}</a></td>
+            </tr>
+        )
+    }
     return(
         <>
             <h1 className="head-vol">VOLUNTEERS</h1>
@@ -16,20 +26,8 @@ export const Volunteers = () => {
                             <th>Email ID</th>
                         </tr>
                     </thead>
-                    <tbody>{
-                        Candidates.map((Candidates,index)=>{
-                            return(
-                                <>
-                                <tr className="table-data" key={index}>
-                                        <td>{index+1}</td>
-                                        <td>{Candidates.Name}</td>
-                                        <td>{Candidates.domain}</td>
-                                        <td><a className="text-dark" href={"mailto:" + Candidates.emailid}>{Candidates.emailid}</a></td>
-                                </tr>
-                                </>
-                            )
-                        })
-                    }
+                    <tbody>
+                        {Candidates.map(getCandidates)}  
                     </tbody>
                 </Table>
             </div>
