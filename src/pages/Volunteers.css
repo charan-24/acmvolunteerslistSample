@@ -55,7 +55,7 @@ thead{
     
 }
 
-/* @media (min-width:768px) and (max-width:992px){
+@media (min-width:768px) and (max-width:992px){
     .table-data{
         font-size: 10px;
     }
@@ -96,4 +96,4 @@ thead{
         margin-right: 2px;
     }
 
-} */
+}
