@@ -41,7 +41,6 @@ export const Volunteers = () => {
                             <th>S.No</th>
                             <th>Name</th>
                             <th>Domain</th>
-                            <th>Batch</th>
                             <th>Email ID</th>
                         </tr>
                     </thead>
@@ -53,7 +52,6 @@ export const Volunteers = () => {
                                         <td>{index+1}</td>
                                         <td>{Candidates.Name}</td>
                                         <td>{Candidates.domain}</td>
-                                        <td>{Candidates.batch}</td>
                                         <td>{Candidates.emailid}</td>
                                     </tr>
                                 </>

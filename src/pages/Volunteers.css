@@ -25,12 +25,10 @@
 .Team-desc{
     padding:20px;
 }
-
-.cand-table{
-    margin: 0px 200px 30px 200px;
-    /* border: 2px solid; */
-    padding: 20px;
-    padding-bottom: 0px;
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 .table{
     border: 2px solid;
@@ -42,58 +40,27 @@ thead{
     background-color: #ddeef5;
 }
 
-@media (min-width:993px) and (max-width:1200px) {
-    .table-data{
-        font-size: 12px;
-    }
-    .cand-table{
-        margin: 0px 200px 30px 200px;
-        border: 2px solid;
-        padding: 20px;
-        padding-bottom: 0px;
-    }
-    
-}
-
-@media (min-width:768px) and (max-width:992px){
-    .table-data{
-        font-size: 10px;
-    }
-    .cand-table{
-        margin: 0px 100px 30px 100px;
-        
-    }
-}
-
-@media (min-width:576px) and (max-width:767px){
-    .table-data{
-        font-size: 10px;
-    }
-    .cand-table{
-        padding: 10px;
-        padding-bottom: 0px;
-        margin: 0px 50px 30px 50px; 
-    }
-}
-
-@media (min-width:320px) and (max-width:575px){
+@media (min-width:576px) and (max-width:768px){
     .Teams{
-        text-align: left;
-        padding: 5px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
-    thead{
-        font-size: 10px;
-    }
-    .table-data{
-        font-size: 9px;
-    }
-    .cand-table{
-        margin: 0px 10px 2px 10px;
-        padding: 5px;
-    }
-    .table{
-        margin-left: 2px;
-        margin-right: 2px;
-    }
+}
 
+@media (min-width:320px) and (max-width:576px){
+    .Teams{
+        font-size: 15px;
+        word-spacing: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:320px){
+    .Teams{
+        font-size: 15px;
+        word-spacing: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
