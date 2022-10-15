@@ -29,7 +29,6 @@ export const Candidates=[
         domain:"Social Media",
         emailid:"aditxyaa@gmail.com",
     },
-    
     {
         id:6,
         Name:"Neela Varun Gopa",
